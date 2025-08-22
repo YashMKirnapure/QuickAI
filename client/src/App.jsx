@@ -13,12 +13,14 @@ import Community from './pages/Community.jsx';
 import { useAuth } from '@clerk/clerk-react';
 import { useEffect } from 'react';
 import {Toaster} from 'react-hot-toast';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 const App = () => 
 {
   return (
     <div>
       <Toaster />
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/ai' element={<Layout/>}>
